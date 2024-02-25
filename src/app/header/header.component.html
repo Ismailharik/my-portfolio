@@ -1,0 +1,48 @@
+  <!-- Header -->
+  <div class="header-top-fixed one-page-nav" [ngClass]="{'menu-open menu-open-desk' : sidebarOpen}">
+    <div class="container">
+        <!-- Brand -->
+        <div class="logo">
+            <a class="navbar-brand" href="javascript:">
+                <h1> <span>I</span>smail <span>H</span>arik</h1>
+            </a>
+        </div>
+        <!-- / -->
+        <ul class="main-menu">
+            <li>
+                <a class="menu-item"  spyOn="home" activeClass="active"  href="#home" (click)="fullPageScroll('home')">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="menu-item" spyOn="about" activeClass="active"  href="#about" (click)="fullPageScroll('about')"> 
+                    About Me
+                </a>
+            </li>
+            <li>
+                <a class="menu-item" spyOn="project" activeClass="active"  href="#project" (click)="fullPageScroll('project')">
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a class="menu-item"  spyOn="services" activeClass="active" href="#services" (click)="fullPageScroll('services')">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a class="menu-item"  spyOn="contactus" activeClass="active"  href="#contactus" (click)="fullPageScroll('contactus')">
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <!-- Top Menu -->
+        <div class="d-flex" (clickOutside)="onClickedOutside($event)">
+            <a class="px-btn d-none d-lg-inline-flex" href="javascript:">Lets' Talk</a>
+            <button class="toggler-menu d-lg-none" [ngClass]="{'open': sidebarOpen}" (click)="toggleMenu()">
+                <span></span>
+            </button>
+        </div>
+        <!-- / -->
+    </div>
+</div>
+<!-- End Header -->
