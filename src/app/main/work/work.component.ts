@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
 import { options } from '../constant';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-work',
